@@ -30,4 +30,11 @@ public class Loan
     public double getLoanAmount(){
         return loanAmount;
     }
+    public int getNumLenders(){
+        return getNumLenders();
+    }
+    public String toString(){
+        return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
+    }
+    
 }
