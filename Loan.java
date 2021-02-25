@@ -31,14 +31,15 @@ public class Loan
     public double getLoanAmount(){
         return loanAmount;
     }
-    
+    //HC
     public int getNumLenders(){
         return numLenders;
     }
-    
+    //HC
     public String toString(){
         return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
     }
+    
     
     //AM
     public String getCountry(){
@@ -67,7 +68,7 @@ public class Loan
     public void setDaysToFund(int newFund){
         daysToFund = newFund;
     }
-    
+    //HC
     public void setNumLenders(int newnumLenders){
         numLenders = newnumLenders;
     }
