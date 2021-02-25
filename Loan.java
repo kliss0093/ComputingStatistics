@@ -43,11 +43,19 @@ public class Loan
         return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
     }
     
-     public void setCountry(String newCountry){
-        country = newCountry;
+    public void setID(int ID){
+        this.ID = ID;
     }
     
-    public void setDaysToFund(int newFund){
-        daysToFund = newFund;
+    public void setLoanAmount(double loanAmount){
+        this.loanAmount = loanAmount;
+    }
+    
+     public void setCountry(String country){
+        this.country = country;
+    }
+    
+    public void setDaysToFund(int daysToFund){
+        this.daysToFund = daysToFund;
     }
 }
