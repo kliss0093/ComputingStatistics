@@ -30,4 +30,12 @@ public class Loan
     public double getLoanAmount(){
         return loanAmount;
     }
+    
+    public String getCountry(){
+        return country;
+    }
+    
+    public int getDaysToFund(){
+        return daysToFund;
+    }
 }
