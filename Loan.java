@@ -38,29 +38,26 @@ public class Loan
         return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
     }
     
+    //AM
     public String getCountry(){
         return country;
     }
     
+    //AM
     public int getDaysToFund(){
         return daysToFund;
     }
     
-    public void setID(int ID){
-        this.ID = ID;
+    //AM
+     public void setCountry(String newCountry){
+        country = newCountry;
     }
     
-    public void setLoanAmount(double loanAmount){
-        this.loanAmount = loanAmount;
+    //AM
+    public void setDaysToFund(int newFund){
+        daysToFund = newFund;
     }
     
-     public void setCountry(String country){
-        this.country = country;
-    }
-    
-    public void setDaysToFund(int daysToFund){
-        this.daysToFund = daysToFund;
-    }
     public void setNumLenders(int newnumLenders){
         numLenders = newnumLenders;
     }
