@@ -29,15 +29,16 @@ public class Loan
     public double getLoanAmount(){
         return loanAmount;
     }
+    
     //HC
     public int getNumLenders(){
         return numLenders;
     }
+    
     //HC
     public String toString(){
         return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
     }
-    
     
     //AM
     public String getCountry(){
