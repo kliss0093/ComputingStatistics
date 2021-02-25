@@ -31,16 +31,20 @@ public class Loan
         return loanAmount;
     }
     
+    public int getNumLenders(){
+        return numLenders;
+    }
+    
+    public String toString(){
+        return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
+    }
+    
     public String getCountry(){
         return country;
     }
     
     public int getDaysToFund(){
         return daysToFund;
-    }
-    
-    public String toString(){
-        return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
     }
     
     public void setID(int ID){
