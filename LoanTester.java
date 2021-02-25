@@ -15,7 +15,7 @@ public class LoanTester {
 //       System.out.println(testOne.getLoanAmount() + " == 450.0");
 //       testOne.setCountry("USA");
 //       System.out.println(testOne.getCountry() + " == USA");
-//       testOne.setDaysToFund(12);
+//      testOne.setDaysToFund(12);
 //       System.out.println(testOne.getDaysToFund() + " == 12");
 //       testOne.setNumLenders(4);
 //       System.out.println(testOne.getNumLenders() + " == 4");
