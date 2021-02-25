@@ -54,4 +54,7 @@ public class Loan
     public void setDaysToFund(int newFund){
         daysToFund = newFund;
     }
+    public void setNumLenders(int newnumLenders){
+        numLenders = newnumLenders;
+    }
 }
