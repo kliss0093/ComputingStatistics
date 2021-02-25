@@ -1,15 +1,15 @@
 #BlueJ package file
-dependency1.from=ComputingStatistics
+dependency1.from=ComputingStatisticsRunner
 dependency1.to=Loan
 dependency1.type=UsesDependency
-dependency2.from=LoanTester
-dependency2.to=Loan
+dependency2.from=ComputingStatisticsRunner
+dependency2.to=ComputingStatistics
 dependency2.type=UsesDependency
-dependency3.from=ComputingStatisticsRunner
+dependency3.from=ComputingStatistics
 dependency3.to=Loan
 dependency3.type=UsesDependency
-dependency4.from=ComputingStatisticsRunner
-dependency4.to=ComputingStatistics
+dependency4.from=LoanTester
+dependency4.to=Loan
 dependency4.type=UsesDependency
 editor.fx.0.height=722
 editor.fx.0.width=800
