@@ -63,17 +63,17 @@ public class Loan
     }
     
     //AM
-     public void setCountry(String newCountry){
-        country = newCountry;
+     public void setCountry(String country){
+        this.country = country;
     }
     
     //AM
-    public void setDaysToFund(int newFund){
-        daysToFund = newFund;
+    public void setDaysToFund(int daysToFund){
+        this.daysToFund = daysToFund;
     }
     
     //HC
-    public void setNumLenders(int newnumLenders){
-        numLenders = newnumLenders;
+    public void setNumLenders(int numLenders){
+        this.numLenders = numLenders;
     }
 }
