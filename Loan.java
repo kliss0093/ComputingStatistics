@@ -39,18 +39,22 @@ public class Loan
         return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
     }
     
+    //AM
     public String getCountry(){
         return country;
     }
     
+    //AM
     public int getDaysToFund(){
         return daysToFund;
     }
     
+    //AM
      public void setCountry(String newCountry){
         country = newCountry;
     }
     
+    //AM
     public void setDaysToFund(int newFund){
         daysToFund = newFund;
     }
