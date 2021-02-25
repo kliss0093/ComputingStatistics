@@ -8,11 +8,7 @@ public class LoanTester {
 //       System.out.println(testOne.getNumLenders() + " == 8");
 //       System.out.println(testOne);  //tests toString
 //       System.out.println("ID: 12345 loan amount: 280.0 country: Japan days to fund: 5 num lenders: 8");  //validates toString test
-<<<<<<< HEAD
 
-=======
-       
->>>>>>> 1c1f98f29834f9b002d760f05832a530cb674f2e
 //       testOne.setID(54321);
 //       System.out.println(testOne.getID() + " == 54321");
 //       testOne.setLoanAmount(450.00);

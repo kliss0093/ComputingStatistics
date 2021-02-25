@@ -22,10 +22,12 @@ public class Loan
      this.numLenders = numLenders;
     }
     
+    //KL
     public int getID(){
         return ID;
     }
     
+    //KL
     public double getLoanAmount(){
         return loanAmount;
     }
@@ -48,6 +50,14 @@ public class Loan
         return daysToFund;
     }
     
+    //KL
+    public void setID(int ID){
+        this.ID = ID;
+    }
+    
+    public void setLoanAmount(double loanAmount){
+        this.loanAmount = loanAmount;
+    }
     //AM
      public void setCountry(String newCountry){
         country = newCountry;
