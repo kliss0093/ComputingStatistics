@@ -39,7 +39,7 @@ public class Loan
     
     //HC
     public String toString(){
-        return ID+" "+loanAmount+" "+country+" "+daysToFund+" "+numLenders+" ";
+        return "ID: " +ID+ " loan amount: "+loanAmount+" country: "+country+" days to fund: "+daysToFund+" num lenders "+numLenders;
     }
     
     //AM
