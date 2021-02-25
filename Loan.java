@@ -46,4 +46,12 @@ public class Loan
     public int getDaysToFund(){
         return daysToFund;
     }
+    
+     public void setCountry(String newCountry){
+        country = newCountry;
+    }
+    
+    public void setDaysToFund(int newFund){
+        daysToFund = newFund;
+    }
 }
