@@ -17,9 +17,9 @@ public class LoanTester {
        System.out.println(testOne.getCountry() + " == USA");
        testOne.setDaysToFund(12);
        System.out.println(testOne.getDaysToFund() + " == 12");
-//       testOne.setNumLenders(4);
-//       System.out.println(testOne.getNumLenders() + " == 4");
-//       System.out.println(testOne);
-//       System.out.println("ID: 54321 loan amount: 450.0 country: USA days to fund: 12 num lenders: 4");
+       testOne.setNumLenders(4);
+       System.out.println(testOne.getNumLenders() + " == 4");
+       System.out.println(testOne);
+       System.out.println("ID: 54321 loan amount: 450.0 country: USA days to fund: 12 num lenders: 4");
    }
 }
