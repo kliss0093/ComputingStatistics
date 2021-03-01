@@ -84,7 +84,21 @@ public class ComputingStatistics {
        return amount;
    }
    
+   //KL
+   public double avgDaysToFund() {
+       double days = 0.0;
+       int count = 0;
+       Loan loan;
+       for(int i = 0; i < data.size(); i++) {
+           loan = data.get(i);
+           days = days + loan.getDaysToFund();
+           count++;
+       }
+       days = days/count;
+       return days;
+   }
    
+   //KL
    public double largestLoan(String countryNm) {
        double amount = 0.0;
        Loan loan;
