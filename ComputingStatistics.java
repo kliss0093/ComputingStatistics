@@ -55,6 +55,20 @@ public class ComputingStatistics {
       }
       return amount;
    }
+   
+   //KL
+   public double smallestLoan(){
+       double amount = 0.0;
+       Loan loan;
+       for(int i = 0; i < data.size(); i++) {
+           loan = data.get(i);
+           if(amount > loan.getLoanAmount()) {
+               amount = loan.getLoanAmount();
+           }
+       }
+       return amount;
+   }
+   
    //HC
    
 
