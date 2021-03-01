@@ -46,6 +46,21 @@ public class ComputingStatistics {
    }
    
    //AM
+   public double avgLoan(String countryNm) {
+      double amount = 0.0;
+      int cycles = 0;
+      Loan loan;
+      for(int i = 0; i < data.size(); i++) {
+         loan = data.get(i);
+         if (loan.getCountry().equals(countryNm)){
+             amount = amount + loan.getLoanAmount();
+             cycles+=1;
+        }
+      }
+      return amount / cycles;
+   }
+   
+   //AM
    public double largestLoan() {
       double amount = 0.0;
       Loan loan;
