@@ -58,7 +58,7 @@ public class ComputingStatistics {
    
    //KL
    public double smallestLoan(){
-       double amount = 0.0;
+       double amount = Integer.MAX_VALUE;
        Loan loan;
        for(int i = 0; i < data.size(); i++) {
            loan = data.get(i);
