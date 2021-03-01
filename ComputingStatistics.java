@@ -84,6 +84,20 @@ public class ComputingStatistics {
        return amount;
    }
    
+   
+   public double largestLoan(String countryNm) {
+       double amount = 0.0;
+       Loan loan;
+       for(int i = 0; i < data.size(); i++) {
+           loan = data.get(i);
+           if(loan.getCountry().equals(countryNm)){
+               if(amount < loan.getLoanAmount()) {
+                   amount = loan.getLoanAmount();
+               }
+           }
+       }
+       return amount;
+   }
    //HC
    
 
