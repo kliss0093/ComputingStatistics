@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.lang.Math; 
 
 public class ComputingStatistics {
    /**
@@ -115,5 +116,8 @@ public class ComputingStatistics {
    //HC
    
 
-    
+    //AM
+    public double standardDeviation(){
+        return Math.sqrt(this.variance());
+    }
 }
