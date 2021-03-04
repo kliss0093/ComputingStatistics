@@ -116,8 +116,8 @@ public class ComputingStatistics {
    //HC
    
 
-    //AM
-    public double standardDeviation(){
-        return Math.sqrt(this.variance());
-    }
+    //AM (commented out untill variance is done)
+  //  public double standardDeviation(){
+  //      return Math.sqrt(this.variance());
+  //  }
 }
