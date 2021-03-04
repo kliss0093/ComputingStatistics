@@ -92,9 +92,11 @@ public class ComputingStatistics {
        for(int i = 0; i < data.size(); i++) {
            loan = data.get(i);
            days = days + loan.getDaysToFund();
-           count++;
        }
-       days = days/count;
+       days = days/60;
+       days = days/60;
+       days = days/24;
+       days = days/data.size();
        return days;
    }
    
