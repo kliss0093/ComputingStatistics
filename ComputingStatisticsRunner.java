@@ -35,8 +35,8 @@ public class ComputingStatisticsRunner {
 //           mostLoans = "Kenya";
 //       System.out.println("The country with the most loans funded: " + mostLoans);   //Level 2 Question 5
       
-//       System.out.println("Variance: " + analysis.variance());                       //Level 3 Question 1
-//       System.out.println("Standard deviation: " + analysis.standardDeviation());    //Level 3 Question 2
+       System.out.println("Variance: " + analysis.variance());                       //Level 3 Question 1
+       System.out.println("Standard deviation: " + analysis.standardDeviation());    //Level 3 Question 2
 //       System.out.println("Empirical rule (yes/no): " + analysis.empiricalRule());   //Level 3 Question 3
    }
    

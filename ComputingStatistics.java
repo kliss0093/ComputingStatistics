@@ -116,9 +116,29 @@ public class ComputingStatistics {
    }
    //HC
    
-
-    //AM (commented out untill variance is done)
-  //  public double standardDeviation(){
-  //      return Math.sqrt(this.variance());
-  //  }
+   // KL
+   public double variance(){
+       double variance = 0.0;
+       double sum = 0.0;
+       Loan loan;
+       for(int i = 0; i < data.size(); i++){
+           loan = data.get(i);
+           sum = sum + loan.getLoanAmount();
+       }
+       double avg = sum/data.size();
+       double sum2 = 0;
+       for(int i = 0; i < data.size(); i++){
+           loan = data.get(i);
+           double amount = (double)(loan.getLoanAmount());
+           double currentVal = amount - avg;
+           currentVal = currentVal * currentVal;
+           sum2 = sum2 + currentVal;
+       }
+       variance = sum2/data.size();
+       return variance;
+   }
+   //AM
+   public double standardDeviation(){
+       return Math.sqrt(this.variance());
+   }
 }
