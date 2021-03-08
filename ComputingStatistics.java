@@ -88,15 +88,14 @@ public class ComputingStatistics {
    //KL
    public double avgDaysToFund() {
        double days = 0.0;
-       int count = 0;
        Loan loan;
        for(int i = 0; i < data.size(); i++) {
            loan = data.get(i);
            days = days + loan.getDaysToFund();
        }
-       days = days/60;
-       days = days/60;
-       days = days/24;
+       days = days/60.0;
+       days = days/60.0;
+       days = days/24.0;
        days = days/data.size();
        return days;
    }
