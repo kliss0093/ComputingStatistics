@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.lang.Math; 
 
 
 
@@ -86,6 +87,35 @@ public class ComputingStatistics {
        return amount;
    }
    
+   //KL
+   public double avgDaysToFund() {
+       double days = 0.0;
+       Loan loan;
+       for(int i = 0; i < data.size(); i++) {
+           loan = data.get(i);
+           days = days + loan.getDaysToFund();
+       }
+       days = days/60.0;
+       days = days/60.0;
+       days = days/24.0;
+       days = days/data.size();
+       return days;
+   }
+   
+   //KL
+   public double largestLoan(String countryNm) {
+       double amount = 0.0;
+       Loan loan;
+       for(int i = 0; i < data.size(); i++) {
+           loan = data.get(i);
+           if(loan.getCountry().equals(countryNm)){
+               if(amount < loan.getLoanAmount()) {
+                   amount = loan.getLoanAmount();
+               }
+           }
+       }
+       return amount;
+   }
    //HC
     public String largestLoanCountry()
       {
@@ -178,6 +208,7 @@ public class ComputingStatistics {
     return country;
       
    }
+   
   public double loansFunded(String countryNm)
    {
     double total = 0.0;
@@ -201,6 +232,34 @@ public class ComputingStatistics {
       
       }
       return total;
+    }
+
+   
+   // KL
+    public double variance(){
+       double variance = 0.0;
+       double sum = 0.0;
+       Loan loan;
+       for(int i = 0; i < data.size(); i++){
+           loan = data.get(i);
+           sum = sum + loan.getLoanAmount();
+       }
+       double avg = sum/data.size();
+       double sum2 = 0;
+       for(int i = 0; i < data.size(); i++){
+           loan = data.get(i);
+           double amount = (double)(loan.getLoanAmount());
+           double currentVal = amount - avg;
+           currentVal = currentVal * currentVal;
+           sum2 = sum2 + currentVal;
+       }
+       variance = sum2/data.size();
+       return variance;
+   }
+   //AM
+   public double standardDeviation(){
+       return Math.sqrt(this.variance());
+
    }
 }
 
